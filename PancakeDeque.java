@@ -4,6 +4,7 @@ public class PancakeDeque {
     public static void main(String[] args){
         Scanner S = new Scanner(System.in);
         int T = S.nextInt();
+        int c = 1;
         while(T-->0){
             int N = S.nextInt();
             Deque<Integer> queue = new ArrayDeque<>(N);
@@ -25,7 +26,7 @@ public class PancakeDeque {
                     last = Math.max(last,queue.pollLast());
                 }
             }
-            System.out.println(count);
+            System.out.println("Case #"+(c++)+": "+count);
         }
     }
 }
